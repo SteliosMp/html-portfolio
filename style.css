@@ -1,0 +1,454 @@
+html{
+    font-family: "Oswald", sans-serif;
+    margin: 50px;
+    background-color: yellow;
+    min-width: 450px;
+}
+
+body{
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 10px;
+    background-color: bisque;
+}
+
+h1{
+    font-size: 6vh;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 10px black;
+}
+
+.fa-2x{
+    color: red;
+}
+
+.fa-shopping-cart{
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.flag{
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.flag:hover{
+	animation: flag-hover 0.6s both;
+}
+
+.fa-code{
+    color: white;
+}
+
+.fa-users{
+    color: gold;
+    -webkit-text-stroke: 1px black;
+}
+
+@keyframes flag-hover{
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/* TOP SECTION */
+.top-section-nav{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: 0.2fr 0.8fr ;
+    gap: 10px;
+}
+
+.img{
+    height: 30vh;
+    width: 30vh;
+    border: 4px solid black;
+    border-radius: 50%;
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img:hover {
+    animation-name: hover-image;
+    animation-duration: 1s;
+    width: 40vh;
+    height: 40vh;
+}
+
+@keyframes hover-image {
+    0% {width: 30vh; height: 30vh;}
+    100% {width: 40vh; height: 40vh;}
+}
+
+div.nav{
+    text-align: right;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: right;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: yellow;
+    box-shadow: 2px 2px black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.nav-btn{
+    display: none;
+    height: 5vh;
+    width: 5vh;
+    background-color: var(--color);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column-start: 3;
+}
+
+.nav-btn:hover{
+    color: black;
+    background-color: yellow;
+    box-shadow: 2px 2px black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.name-title{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.name{
+    font-family: "Protest Riot", sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    text-shadow: none;
+}
+
+ /* FOOTER */
+.bottom-section{
+    padding: 20px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* MIDDLE SECTION */
+.middle-section{
+    padding: 20px;
+}
+
+.year{
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: darkcyan;
+}
+
+#about-me-txt, #contact-txt{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: x-large;
+}
+
+.education, .experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: max-content;
+}
+
+.experience{
+    grid-template-rows:  auto;
+}
+
+.mini-img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 0px 20px 20px 20px;
+    background-color: white;
+}
+
+.mini-img:hover{
+    box-shadow: 5px 5px yellow;
+}
+
+.place{
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 60px;
+    padding-bottom: 2px;
+}
+
+.mogie-eshop{
+    width: 450px;
+    border: 3px solid black;
+    border-radius: 10px 0px;
+}
+
+.mogie-eshop:hover{
+    box-shadow: 5px 5px pink;
+}
+
+.exp-project, .exp-project2{
+    background-color: grey;
+}
+
+.exp-project{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.exp-project2{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.exp-project a, .exp-project2 a{
+    text-decoration: none;
+    color: pink;
+}
+
+#mogie-link{
+    background-color: black;
+}
+
+#mogie-link:hover{
+    background-color: pink;
+    color: black;
+}
+
+.exp-project2{
+    grid-column-start: 2;
+}
+
+.exp-languages{
+    grid-row-start: 3;
+}
+
+#langs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-gr, .lang-en{
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.skl{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.skl:hover{
+    animation: skl-hover;
+	animation: skl-hover 0.3s linear infinite both;
+}
+
+@keyframes skl-hover{
+    0% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+    }
+      20% {
+        -webkit-transform: translate(-2px, 2px);
+                transform: translate(-2px, 2px);
+    }
+      40% {
+        -webkit-transform: translate(-2px, -2px);
+                transform: translate(-2px, -2px);
+    }
+      60% {
+        -webkit-transform: translate(2px, 2px);
+                transform: translate(2px, 2px);
+    }
+      80% {
+        -webkit-transform: translate(2px, -2px);
+                transform: translate(2px, -2px);
+    }
+      100% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+    }
+}
+
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: Oswald;
+    font-size: 18px;
+    box-shadow: 5px 5px;
+}
+
+input[type=submit]{
+    font-family: Oswald;
+    font-size: 18px;
+    width: 12vh;
+    background-color: var(--color);
+    box-shadow: 0px 0px;
+}
+
+input[type=submit]:hover{
+    background-color: yellow;
+    font-weight: 700;
+    box-shadow: 4px 4px;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact1{
+    grid-row: span 2;
+    padding: 10px;
+}
+
+.contact2{
+    text-align: center;
+}
+
+.social{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#social{
+    grid-column: span 2;
+}
+
+.social i{
+    padding: 20px;
+}
+
+.social i:hover{
+    color: white;
+}
+
+.social a{
+    text-decoration: none;
+    color: black;
+}
+
+  
+
+/* MEDIA QUERIES */
+@media (max-width: 992px){
+    html{
+        margin: 5px;
+    }
+
+    .img{
+        height: 25vh;
+        width: 25vh;
+    }
+
+    #about-me-txt{
+        font-size: large;
+    }
+
+    .mini-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .place{
+        height: 100px;
+    }
+
+    .mogie-eshop{
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .nav{
+        display: none;
+    }
+
+    .nav-btn{
+        display: block;
+    }
+
+    .name{
+        text-align: center;
+    }
+
+    .name-title{
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .education, .experience{
+        display: block;
+    }
+
+    .exp-project, .exp-project2{
+        display: grid;
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        margin: 0;
+    }
+
+    .woo{
+        grid-column-start: 2;
+    }
+
+    .contact-grid{
+        display: block;
+    }
+
+    .social{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
+    }
+}
